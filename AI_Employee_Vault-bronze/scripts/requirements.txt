@@ -1,0 +1,17 @@
+# AI Employee Watcher Dependencies
+# Install with: pip install -r requirements.txt
+
+# File system monitoring
+watchdog>=4.0.0
+
+# Optional: For Gmail watcher (Silver tier)
+# google-auth>=2.0.0
+# google-auth-oauthlib>=1.0.0
+# google-auth-httplib2>=0.2.0
+# google-api-python-client>=2.0.0
+
+# Optional: For WhatsApp watcher (Silver tier)
+# playwright>=1.40.0
+
+# Optional: For orchestrator
+# python-dotenv>=1.0.0

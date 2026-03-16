@@ -1,0 +1,222 @@
+{
+  "main": {
+    "id": "5c02b52b3b71d7a5",
+    "type": "split",
+    "children": [
+      {
+        "id": "b92c909a870a2e6b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8c323fbcb84b9c89",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dashboard.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dashboard"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e7a9a7b8cd0653d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "b6dd499b0f36583b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29a647012db17f48",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f13e6a261d2c1e8e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6776ebf7aa976a2b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ada871dbda933e47",
+    "type": "split",
+    "children": [
+      {
+        "id": "7d42e4240afb598a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a8a7cdfc2543205c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Dashboard.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Dashboard"
+            }
+          },
+          {
+            "id": "fe5d85979493fbfb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Dashboard.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Dashboard"
+            }
+          },
+          {
+            "id": "82f6d58854f46120",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5c3ecd4920bb0c9c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "448c57c6bfdff368",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Dashboard.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Dashboard"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "8c323fbcb84b9c89",
+  "lastOpenFiles": [
+    "Skills/README.md",
+    "Skills/excel_reader_skill.md",
+    "Skills/pdf_reader_skill.md",
+    "Skills/scheduler_skill.md",
+    "Skills/approval_workflow_skill.md",
+    "Skills/plan_generator_skill.md",
+    "Skills/mcp_email_skill.md",
+    "Skills/whatsapp_watcher_skill.md",
+    "Skills/gmail_watcher_skill.md",
+    "Skills",
+    "AGENT.md",
+    "Plans/Plan_2026-03-14.md",
+    "BRONZE_TIER_TEST_REPORT.md",
+    "Dashboard.md",
+    "Done/FILE_bronze_tier_test.txt",
+    "Done/FILE_bronze_tier_test.md",
+    "Done/FILE_docker starting commands.md",
+    "Done/FILE_test_document.md",
+    "Needs_Action/FILE_bronze_tier_test.md",
+    "Needs_Action/FILE_bronze_tier_test.txt",
+    "Inbox/bronze_tier_test.txt",
+    "scripts/__pycache__/filesystem_watcher.cpython-311.pyc",
+    "scripts/skills",
+    "Done/FILE_test_file_2.txt",
+    "Done/FILE_test_file_2.md",
+    "Done/FILE_test_document.pdf",
+    "Done/FILE_docker starting commands.txt",
+    "Needs_Action/FILE_docker starting commands.md",
+    "Inbox/test_document.pdf",
+    "USAGE_GUIDE.md",
+    "Needs_Action/FILE_test_file_2.md",
+    "Needs_Action/FILE_test_document.md",
+    "BRONZE_TIER_VERIFICATION.md"
+  ]
+}

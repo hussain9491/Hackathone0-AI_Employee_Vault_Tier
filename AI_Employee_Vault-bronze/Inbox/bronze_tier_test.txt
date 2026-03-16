@@ -1,0 +1,11 @@
+Bronze Tier Test File
+=====================
+Created: 2026-03-14
+Purpose: Testing filesystem watcher functionality
+
+This is a test document to verify:
+1. File detection in Inbox folder
+2. Action file creation in Needs_Action folder
+3. Metadata generation with proper format
+
+Test Status: IN PROGRESS

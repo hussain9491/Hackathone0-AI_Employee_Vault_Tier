@@ -1,0 +1,58 @@
+docker build -t testing-image:v1 .
+-t tag baat rha h
+testing-image ham image ko naam de rhe h 
+:v1 version bata rhe h 
+. directory ki location bata rhe h docker file ki location jo image banane k lie required hoti h docker ko
+
+
+uv ki tomal file required.txt me ajayege or use phir docker file me used kr sakte h
+uv pip compile pyproject.toml -o requirements.txt
+
+
+check image bani ya nhi
+docker images
+
+running container show karwata h
+docker ps
+
+port mapping
+isse terminal free hojata h
+container chalega 
+docker run -d testing-docker 8080:80 testing-docker:v1
+
+ab ye container ka name khu decide kar lega
+docker run -p 8000:8000 testing-docker:v1
+
+
+.dockerignore file me packages rakhte h jo extra hote h saari .env files etc
+
+chapter 49 part 5
+docker logs
+docker execute docker inspect
+
+
+docker run -d -p 8000:8000 --name test testing-docker:v3
+test is container name we give
+testing-docker image name
+
+
+for showing errors 
+docker logs container name 
+
+for showing live errors
+docker logs -f containername
+
+
+if u want specific logs
+docker logs --tail 5  containername
+
+
+
+run brokenfile
+docker run -d --name containername imagename:v1
+
+check 
+docker ps
+
+for read error run this
+docker logs containername
