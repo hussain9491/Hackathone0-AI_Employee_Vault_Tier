@@ -1,0 +1,208 @@
+================================================================================
+                    AI EMPLOYEE EMAIL WORKFLOW GUIDE
+                         Silver Tier System
+================================================================================
+
+COMPLETE EMAIL PROCESSING WORKFLOW
+----------------------------------
+
+┌─────────────┐     ┌──────────────┐     ┌─────────────┐     ┌─────────────────┐
+│   Gmail     │────▶│ Needs_Action  │────▶│   Plans/    │     │   Pending_      │
+│   Watcher   │     │  (5 emails)   │     │  Drafts/    │────▶│   Approval      │
+└─────────────┘     └──────────────┘     └─────────────┘     └─────────────────┘
+                                                                                          │
+                                                                                          ▼
+                                                                                  ┌─────────────┐
+                                                                                  │   Approved  │────▶┐
+                                                                                  │   (You)     │     │
+                                                                                  └─────────────┘     │
+                                                                                                      ▼
+                                                                                              ┌─────────────┐
+                                                                                              │    Done/    │
+                                                                                              │ (Sent)      │
+                                                                                              └─────────────┘
+
+
+================================================================================
+STEP-BY-STEP INSTRUCTIONS
+================================================================================
+
+STEP 1: FETCH NEW EMAILS FROM GMAIL
+--------------------------------------------------------------------------------
+Command:
+    cd C:\Users\user1542\Documents\GitHub\H-0-Q4\AI_Employee_Vault\scripts
+    python gmail_watcher.py --vault-path .. --credentials "..\..\.qwen\credentials.json" --once
+
+What Happens:
+    • Connects to Gmail API
+    • Fetches new/unread emails
+    • Creates EMAIL_*.md files in Needs_Action/ folder
+
+Result:
+    📁 Needs_Action/ contains new email action files
+
+
+STEP 2: PROCESS EMAILS (CLASSIFY + CREATE PLANS + DRAFTS)
+--------------------------------------------------------------------------------
+Command:
+    python orchestrator.py --vault-path .. --process-all
+
+What Happens:
+    • Reads all files in Needs_Action/
+    • Classifies each email:
+      - NOTIFICATION → Moved to Rejected/ (no reply needed)
+      - REAL EMAIL → Creates plan and draft
+    • Creates plan files in Plans/ folder
+    • Creates draft files in Drafts/ folder with status: needs_qwen_draft
+
+Result:
+    📁 Plans/ contains response plans
+    📁 Drafts/ contains email drafts awaiting Qwen
+
+
+STEP 3: QWEN WRITES EMAIL REPLIES
+--------------------------------------------------------------------------------
+Command:
+    qwen "Process all drafts in Drafts folder and write email replies"
+
+What Happens:
+    • Qwen reads drafts with status: needs_qwen_draft
+    • Writes professional email replies
+    • Updates status to: status: draft_ready
+
+Result:
+    📁 Drafts/ contains completed email drafts (status: draft_ready)
+
+
+STEP 4: AUTO-MOVE TO PENDING_APPROVAL
+--------------------------------------------------------------------------------
+Command:
+    python orchestrator.py --vault-path .. --process-all
+
+What Happens:
+    • Scans Drafts/ for files with status: draft_ready
+    • Automatically moves them to Pending_Approval/ folder
+
+Result:
+    📁 Pending_Approval/ contains drafts ready for human review
+
+
+STEP 5: HUMAN APPROVAL (MANUAL)
+--------------------------------------------------------------------------------
+Action: YOU manually do this
+
+What to Do:
+    1. Open files in Pending_Approval/ folder
+    2. Review Qwen's drafted replies
+    3. Edit the draft if needed
+    4. Move file to Approved/ folder when ready to send
+
+Result:
+    📁 Approved/ contains emails you've approved to send
+
+
+STEP 6: SEND APPROVED EMAILS
+--------------------------------------------------------------------------------
+Command:
+    python orchestrator.py --vault-path .. --send-approved
+
+What Happens:
+    • Lists all approved emails ready to send
+    • Shows: To, Subject for each email
+    • Asks: "Send these emails? Type 'Y' to confirm:"
+    • Type Y and press Enter to send
+    • Moves sent emails to Done/ folder
+
+Result:
+    📁 Done/ contains sent email records
+    ✅ Real emails sent via SMTP (if credentials configured)
+
+
+================================================================================
+QUICK REFERENCE TABLE
+================================================================================
+
+Step  Command                              Input Folder      Output Folder
+----  ------------------------------------ ----------------- ------------------
+1     python gmail_watcher.py ... --once   Gmail API         Needs_Action/
+2     python orchestrator.py --process-all Needs_Action/     Plans/, Drafts/
+3     qwen "Process all drafts in Drafts folder and write email replies"             Drafts/           Drafts/ (updated)
+4     python orchestrator.py --process-all Drafts/           Pending_Approval/
+5     YOU: Move files manually             Pending_Approval/ Approved/
+6     python orchestrator.py --send-approved Approved/       Done/ and sent email real
+
+
+================================================================================
+TL;DR - QUICK COMMAND SEQUENCE
+================================================================================
+
+# 1. Fetch new emails
+python gmail_watcher.py --vault-path .. --credentials "..\..\.qwen\credentials.json" --once
+
+# 2. Process and create drafts
+python orchestrator.py --vault-path .. --process-all
+
+# 3. Have Qwen write replies
+qwen "Process all drafts in Drafts folder and write email replies"
+
+# 4. Move completed drafts to Pending_Approval
+python orchestrator.py --vault-path .. --process-all
+
+# 5. YOU: Move files from Pending_Approval/ to Approved/
+
+# 6. Send emails (type Y to confirm)
+python orchestrator.py --vault-path .. --send-approved
+
+
+================================================================================
+FOLDER STRUCTURE
+================================================================================
+
+AI_Employee_Vault/
+├── Needs_Action/       # New emails from Gmail (processed by orchestrator)
+├── Plans/              # Email response plans (auto-created)
+├── Drafts/             # Email drafts (Qwen writes replies here)
+├── Pending_Approval/   # Drafts awaiting your review (auto-moved)
+├── Approved/           # Emails you approved to send (you move here)
+├── Rejected/           # Notifications rejected (no reply needed)
+├── Done/               # Sent emails (auto-moved after sending)
+└── scripts/            # Python scripts for automation
+
+
+================================================================================
+SMTP CONFIGURATION (For Sending Real Emails)
+================================================================================
+
+Create/Edit .env file in project root:
+
+    SMTP_USER=your_email@gmail.com
+    SMTP_PASS=your_gmail_app_password
+    SMTP_HOST=smtp.gmail.com
+    SMTP_PORT=587
+
+Note: For Gmail, you need an "App Password" from Google Account settings
+
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Problem: No emails found in Approved/
+Solution: Make sure you moved files from Pending_Approval/ to Approved/
+
+Problem: Emails not sending (simulated)
+Solution: Configure SMTP credentials in .env file
+
+Problem: Gmail Watcher says credentials not found
+Solution: Check credentials.json exists in .qwen folder
+
+Problem: Drafts not moving to Pending_Approval
+Solution: Ensure status is "draft_ready" and run orchestrator --process-all
+
+
+================================================================================
+For more information, see:
+- Dashboard.md
+- Company_Handbook.md
+- USAGE_GUIDE.md
+================================================================================

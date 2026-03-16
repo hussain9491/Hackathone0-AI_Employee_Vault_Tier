@@ -1,0 +1,56 @@
+# AI Employee Vault - Git Ignore
+
+# Logs
+Logs/
+*.log
+
+# State files
+*_state.txt
+
+# Environment variables (SECRETS!)
+.env
+.env.local
+.env.template
+EMAIL_SENDING_SETUP.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+~$*
+*.tmp
+
+# DO NOT IGNORE - These are needed for the vault to work
+!Inbox/.gitkeep
+!Needs_Action/.gitkeep
+!Done/.gitkeep

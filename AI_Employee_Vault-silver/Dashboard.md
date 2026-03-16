@@ -1,0 +1,88 @@
+---
+last_updated: 2026-03-14
+status: active
+review_frequency: daily
+---
+
+# AI Employee Dashboard
+
+## Quick Status
+
+| Metric | Status | Details |
+|--------|--------|---------|
+| Pending Tasks | 7 | Check `/Needs_Action` |
+| Drafts Ready | 0 | Check `/Drafts` |
+| Pending Approval | 231 | Check `/Pending_Approval` |
+| Ready to Send | 0 | Check `/Approved` |
+| Completed Today | 4 | Check `/Done` |
+| System Status | 🟢 Active | Orchestrator running |## Today's Priorities
+
+- [ ] Review any files in `/Needs_Action`
+- [ ] Process pending approvals
+- [ ] End-of-day: Move completed tasks to `/Done`
+
+## Active Projects
+
+| Project | Status | Next Action |
+|---------|--------|-------------|
+| AI Employee Setup | 🟡 In Progress | Complete Bronze tier |
+
+## Recent Activity
+- **2026-03-15 20:01**: Orchestrator cycle 41 - Processed 0 emails, 287 drafts created
+- **2026-03-15 19:56**: Orchestrator cycle 40 - Processed 0 emails, 280 drafts created
+- **2026-03-15 19:51**: Orchestrator cycle 39 - Processed 0 emails, 273 drafts created
+- **2026-03-15 19:46**: Orchestrator cycle 38 - Processed 0 emails, 266 drafts created
+- **2026-03-15 19:41**: Orchestrator cycle 37 - Processed 0 emails, 259 drafts created
+- **2026-03-15 19:36**: Orchestrator cycle 36 - Processed 0 emails, 252 drafts created
+- **2026-03-15 19:31**: Orchestrator cycle 35 - Processed 0 emails, 245 drafts created
+- **2026-03-15 19:26**: Orchestrator cycle 34 - Processed 0 emails, 238 drafts created
+- **2026-03-15 19:21**: Orchestrator cycle 33 - Processed 0 emails, 231 drafts created
+- **2026-03-15 19:16**: Orchestrator cycle 32 - Processed 0 emails, 224 drafts created
+- **2026-03-15 19:11**: Orchestrator cycle 31 - Processed 0 emails, 217 drafts created
+- **2026-03-15 19:06**: Orchestrator cycle 30 - Processed 0 emails, 210 drafts created
+- **2026-03-15 19:01**: Orchestrator cycle 29 - Processed 0 emails, 203 drafts created
+- **2026-03-15 18:56**: Orchestrator cycle 28 - Processed 0 emails, 196 drafts created
+- **2026-03-15 18:51**: Orchestrator cycle 27 - Processed 0 emails, 189 drafts created
+- **2026-03-15 18:46**: Orchestrator cycle 26 - Processed 0 emails, 182 drafts created
+- **2026-03-15 18:41**: Orchestrator cycle 25 - Processed 0 emails, 175 drafts created
+- **2026-03-15 18:35**: Orchestrator cycle 24 - Processed 0 emails, 168 drafts created
+- **2026-03-15 18:30**: Orchestrator cycle 23 - Processed 0 emails, 161 drafts created
+- **2026-03-15 18:25**: Orchestrator cycle 22 - Processed 0 emails, 154 drafts created
+- **2026-03-15 18:20**: Orchestrator cycle 21 - Processed 0 emails, 147 drafts created
+- **2026-03-15 18:15**: Orchestrator cycle 20 - Processed 0 emails, 140 drafts created
+- **2026-03-15 18:10**: Orchestrator cycle 19 - Processed 0 emails, 133 drafts created
+- **2026-03-15 18:05**: Orchestrator cycle 18 - Processed 0 emails, 126 drafts created
+- **2026-03-15 18:00**: Orchestrator cycle 17 - Processed 0 emails, 119 drafts created
+- **2026-03-15 17:55**: Orchestrator cycle 16 - Processed 0 emails, 112 drafts created
+- **2026-03-15 17:50**: Orchestrator cycle 15 - Processed 0 emails, 105 drafts created
+- **2026-03-15 17:45**: Orchestrator cycle 14 - Processed 0 emails, 98 drafts created
+- **2026-03-15 17:40**: Orchestrator cycle 13 - Processed 0 emails, 91 drafts created
+- **2026-03-15 17:35**: Orchestrator cycle 12 - Processed 0 emails, 84 drafts created
+- **2026-03-15 17:30**: Orchestrator cycle 11 - Processed 0 emails, 77 drafts created
+- **2026-03-15 17:25**: Orchestrator cycle 10 - Processed 0 emails, 70 drafts created
+- **2026-03-15 17:20**: Orchestrator cycle 9 - Processed 0 emails, 63 drafts created
+- **2026-03-15 17:15**: Orchestrator cycle 8 - Processed 0 emails, 56 drafts created
+- **2026-03-15 17:10**: Orchestrator cycle 7 - Processed 0 emails, 49 drafts created
+- **2026-03-15 17:05**: Orchestrator cycle 6 - Processed 0 emails, 42 drafts created
+- **2026-03-15 17:00**: Orchestrator cycle 5 - Processed 0 emails, 35 drafts created
+- **2026-03-15 16:55**: Orchestrator cycle 4 - Processed 0 emails, 28 drafts created
+- **2026-03-15 16:50**: Orchestrator cycle 3 - Processed 0 emails, 21 drafts created
+- **2026-03-15 16:45**: Orchestrator cycle 2 - Processed 0 emails, 14 drafts created
+- **2026-03-15 16:40**: Orchestrator cycle 1 - Processed 0 emails, 7 drafts created
+- **2026-03-15 04:43**: Orchestrator cycle 1 - Processed 0 emails, 4 drafts created
+- **2026-03-15 01:37**: Orchestrator cycle 2 - Processed 0 emails, 8 drafts created
+- **2026-03-15 01:32**: Orchestrator cycle 1 - Processed 0 emails, 4 drafts created
+- **2026-03-15 00:35**: Orchestrator cycle 1 - Processed 0 emails, 4 drafts created
+
+- **2026-03-14**: Bronze Tier Test: PASSED - Filesystem watcher successfully processed test file from Inbox to Needs_Action
+
+## Quick Links
+
+- [[Company_Handbook]] - Rules of Engagement
+- `/Inbox` - Raw inputs
+- `/Needs_Action` - Items awaiting processing
+- `/Pending_Approval` - Awaiting your approval
+- `/Done` - Completed tasks
+
+---
+*Generated by AI Employee v0.1 (Bronze Tier)*
