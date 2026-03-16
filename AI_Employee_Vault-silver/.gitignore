@@ -6,7 +6,12 @@ Logs/
 
 # State files
 *_state.txt
-
+.qwen/
+credentials.json
+.qwen/
+.env
+credentials.json
+__pycache__/
 # Environment variables (SECRETS!)
 .env
 .env.local

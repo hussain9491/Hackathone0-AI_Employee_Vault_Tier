@@ -1,0 +1,166 @@
+{
+  "version": 1,
+  "skills": {
+    "browsing-with-playwright": {
+      "source": "bilalmk/todo_correct",
+      "sourceType": "github",
+      "computedHash": "f73daf75e38650c202e61f652a26578db157f8423e8bcf283bcd93b441641461",
+      "description": "Browser automation using Playwright MCP",
+      "tier": "bronze"
+    },
+    "gmail-watcher": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "local-silver-tier",
+      "description": "Monitor Gmail for new unread/important emails",
+      "tier": "silver"
+    },
+    "whatsapp-watcher": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "local-silver-tier",
+      "description": "Monitor WhatsApp Web for keyword messages",
+      "tier": "silver"
+    },
+    "email-mcp": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "local-silver-tier",
+      "description": "MCP server for sending emails via Gmail/SMTP",
+      "tier": "silver"
+    },
+    "linkedin-poster": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "local-silver-tier",
+      "description": "Auto-post to LinkedIn for business lead generation",
+      "tier": "silver"
+    },
+    "approval-workflow-v2": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "local-silver-tier",
+      "description": "Human-in-the-loop approval workflow with expiration",
+      "tier": "silver"
+    },
+    "pdf-reader": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "local-silver-tier",
+      "description": "Extract text and metadata from PDF files",
+      "tier": "silver"
+    },
+    "excel-reader": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "local-silver-tier",
+      "description": "Extract data from Excel files (.xlsx, .xls)",
+      "tier": "silver"
+    },
+    "plan-generator": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "local-silver-tier",
+      "description": "Create structured action plans for complex tasks",
+      "tier": "silver"
+    },
+    "scheduler": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "local-silver-tier",
+      "description": "Run scheduled AI Employee tasks (daily briefings, weekly audits)",
+      "tier": "silver"
+    },
+    "mcp-server": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "local-silver-tier",
+      "description": "Model Context Protocol server for external integrations",
+      "tier": "silver"
+    },
+    "bank-watcher": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "local-silver-tier",
+      "description": "Monitor bank transactions and track business finances",
+      "tier": "silver"
+    },
+    "notification-skill": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "local-silver-tier",
+      "description": "Send urgent alerts via SMS, Slack, Push, or Email",
+      "tier": "silver"
+    },
+    "invoice-processor": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "local-silver-tier",
+      "description": "Extract invoice data, track payments, send reminders",
+      "tier": "silver"
+    },
+    "calendar-mcp": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "local-silver-tier",
+      "description": "MCP server for calendar management and meeting scheduling",
+      "tier": "silver"
+    },
+    "subscription-tracker": {
+      "source": "local",
+      "sourceType": "local",
+      "computedHash": "local-silver-tier",
+      "description": "Track recurring subscriptions and optimize costs",
+      "tier": "silver"
+    }
+  },
+  "silverTierSkills": [
+    "gmail-watcher",
+    "whatsapp-watcher",
+    "email-mcp",
+    "linkedin-poster",
+    "approval-workflow-v2",
+    "pdf-reader",
+    "excel-reader",
+    "plan-generator",
+    "scheduler",
+    "mcp-server",
+    "bank-watcher",
+    "notification-skill",
+    "invoice-processor",
+    "calendar-mcp",
+    "subscription-tracker"
+  ],
+  "allSkills": [
+    "browsing-with-playwright",
+    "gmail-watcher",
+    "whatsapp-watcher",
+    "email-mcp",
+    "linkedin-poster",
+    "approval-workflow-v2",
+    "pdf-reader",
+    "excel-reader",
+    "plan-generator",
+    "scheduler",
+    "mcp-server",
+    "bank-watcher",
+    "notification-skill",
+    "invoice-processor",
+    "calendar-mcp",
+    "subscription-tracker"
+  ],
+  "tierStatus": {
+    "bronze": "complete",
+    "silver": "skills-complete",
+    "gold": "planned",
+    "platinum": "planned"
+  },
+  "skillCategories": {
+    "perception": ["gmail-watcher", "whatsapp-watcher", "pdf-reader", "excel-reader", "bank-watcher"],
+    "reasoning": ["plan-generator", "invoice-processor", "subscription-tracker"],
+    "action": ["email-mcp", "linkedin-poster", "approval-workflow-v2", "calendar-mcp", "notification-skill"],
+    "scheduling": ["scheduler"],
+    "framework": ["mcp-server", "browsing-with-playwright"]
+  },
+  "lastUpdated": "2026-03-14"
+}
